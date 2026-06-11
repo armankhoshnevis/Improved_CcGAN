@@ -1,1 +1,8 @@
-
+__pycache__
+*.ipynb
+*h5
+*.png
+*.pth
+*.sh
+*.err
+*.out
