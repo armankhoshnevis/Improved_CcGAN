@@ -84,7 +84,7 @@ os.makedirs(save_logs_folder, exist_ok=True)
 data_filename = args.data_path + '/RC-49_' + str(args.img_size) + 'x' + str(args.img_size) + '.h5'
 hf = h5py.File(data_filename, 'r')
 labels = hf['labels'][:]
-labels = labels.astype(np.float)
+labels = labels.astype(float)
 images = hf['images'][:]
 hf.close()
 N_all = len(images)
